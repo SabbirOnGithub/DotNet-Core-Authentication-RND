@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Admin</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -21,20 +21,20 @@
                 <div class="navbar-collapse collapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
+                            <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link text-dark" asp-area="Admin" asp-controller="Dashboard" asp-action="Page1">Page 1</a>
+                           <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Page1">Page 1</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link text-dark" asp-area="Admin" asp-controller="Dashboard" asp-action="Page2">Page 2</a>
+                           <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Page2">Page 2</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link text-dark" asp-area="Admin" asp-controller="Dashboard" asp-action="Page3">Page 3</a>
+                           <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Page3">Page 3</a>
                         </li>
                     </ul>
                     <div class="form-inline my-2 my-lg-0">
-                        <a type="button" class="btn btn-outline-primary" asp-area="" asp-controller="Login" asp-action="Logout">
+                        <a type="button" class="btn btn-outline-light" asp-area="" asp-controller="Login" asp-action="Logout">
                             Logout -
                             @Accessor.HttpContext.Session.GetString("username")
                             </a>
